@@ -15,7 +15,7 @@ export default function About () {
             </p>
             <article className="flex flex-col space-y-6 pt-4">
                 <section className="space-y-2">
-                    <h1 className="font-bold text-teal-500 text-2xl">Front-End Developer</h1>
+                    <h1 className="font-bold text-teal-800 text-2xl">Front-End Developer</h1>
                     <p className="italic">
                         Utilizing my skills in the front-end development, I am able to create and implement web applications that are both functional and visually appealing while maintaining a detailed git history for all projects I work on.
                     </p>
@@ -24,7 +24,7 @@ export default function About () {
                 <article className="flex flex-col space-y-2">
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Website:  <span className="font-bold ml-2"> ab-belloadelani.netlify.app</span></h4>
+                        <h4>Website:  <a href="https://ab-belloadelani.netlify.app/" className="font-bold ml-2 text-teal-400 hover:text-teal-800"> ab-belloadelani.netlify.app</a></h4>
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
@@ -32,8 +32,12 @@ export default function About () {
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Email:  <span className="font-bold ml-2">harounadelani@gmail.com</span></h4>
+                        <h4>Email:  <a href="mailto: harounaadelani@gmail.com" className="font-bold ml-2 text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
                     </div>
+                    {/* <div className="flex items-center space-x-2">
+                        <i className="fa-solid fa-angles-right text-teal-800"></i>
+                        <h4>Tel:  <a href="mailto: harounaadelani@gmail.com" className="font-bold ml-2 text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
+                    </div> */}
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
                         <h4>Freelance:  <span className="font-bold capitalize ml-2">available</span></h4>
