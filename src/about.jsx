@@ -5,7 +5,7 @@ export default function About () {
     return (
         <section 
                 id='about' 
-                className="md:h-[80vh] h-auto text-[#45505b] flex flex-col items-center py-12 bg-stone-200 px-3 md:px-44 space-y-8">
+                className=" h-auto text-[#45505b] flex flex-col items-center py-12 bg-stone-200 px-3 md:px-44 space-y-8">
             <div className="flex flex-col items-center space-y-1">
                 <h1 className="font-bold text-4xl capitalize">about</h1>
                 <div className="underline w-[40%] border-2 h-0 border-teal-800"></div>

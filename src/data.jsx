@@ -29,4 +29,49 @@ const linksData = [
     },
 ]
 
-export default linksData
+const projectsData = [
+    {
+        id: 1,
+        image: '',
+        category: 'react',
+        githubRepo: 'https://github.com/Adelani10/quizGame',
+        live: 'https://test-your-general-knowledge.netlify.app/'
+    },
+    {
+        id: 2,
+        image: '',
+        category: 'javascript',
+        githubRepo: 'https://github.com/Adelani10/movies',
+        live: 'https://adelani10.github.io/movies'
+    },
+    {
+        id: 3,
+        image: '',
+        category: 'react',
+        githubRepo: 'https://github.com/Adelani10/tenzies',
+        live: 'https://tenzies-game-ab.netlify.app/'
+    },
+    {
+        id: 4,
+        image: '',
+        category: 'react',
+        githubRepo: 'https://github.com/Adelani10/country-react',
+        live: 'https://ab-countries.netlify.app/'
+    },
+    {
+        id: 5,
+        image: '',
+        category: 'javascript',
+        githubRepo: 'https://github.com/Adelani10/playersName',
+        live: 'https://adelani10.github.io/playersName/'
+    },
+    {
+        id: 6,
+        image: '',
+        category: 'html/css',
+        githubRepo: 'https://github.com/Adelani10/Sidehustle_GRP_96',
+        live: 'https://adelani10.github.io/movies'
+    }
+]
+
+export  {linksData, projectsData}

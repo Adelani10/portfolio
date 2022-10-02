@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './navbar'
 import Home from './home'
 import About from './about'
+import Projects from './projects'
 
 function App() {
   const [openNav, setOpenNav] = useState(false)
@@ -18,7 +19,7 @@ function App() {
       <Navbar openNav={openNav}/>
       <Home/>
       <About/>
-      
+      <Projects/>
     </div>
   )
 }

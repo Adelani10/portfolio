@@ -10,6 +10,7 @@ export default function Home () {
                 <ul className="dynamic-txts">
                     <li><span>Software Developer</span></li>
                     <li><span>FrontEnd Engineer</span></li>
+                    {/* <li><span>Freelancer</span></li> */}
                     <li><span>Tech Enthusiast</span></li>
                 </ul> 
             </div>
