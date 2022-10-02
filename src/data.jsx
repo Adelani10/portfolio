@@ -1,4 +1,10 @@
 import React from "react";
+import fylo from './assets/fylo.jpg'
+import countries from './assets/countries.jpg'
+import quiz from './assets/quiz.jpg'
+import movie from './assets/movie.jpg'
+import fpl from './assets/fpl.jpg'
+import tenzies from './assets/tenzies.jpg'
 
 
 const linksData = [
@@ -32,45 +38,45 @@ const linksData = [
 const projectsData = [
     {
         id: 1,
-        image: '',
+        image: {quiz},
         category: 'react',
         githubRepo: 'https://github.com/Adelani10/quizGame',
         live: 'https://test-your-general-knowledge.netlify.app/'
     },
     {
         id: 2,
-        image: '',
+        image: {movie},
         category: 'javascript',
         githubRepo: 'https://github.com/Adelani10/movies',
         live: 'https://adelani10.github.io/movies'
     },
     {
         id: 3,
-        image: '',
+        image: {tenzies},
         category: 'react',
         githubRepo: 'https://github.com/Adelani10/tenzies',
         live: 'https://tenzies-game-ab.netlify.app/'
     },
     {
         id: 4,
-        image: '',
+        image: {countries},
         category: 'react',
         githubRepo: 'https://github.com/Adelani10/country-react',
         live: 'https://ab-countries.netlify.app/'
     },
     {
         id: 5,
-        image: '',
+        image: {fpl},
         category: 'javascript',
         githubRepo: 'https://github.com/Adelani10/playersName',
         live: 'https://adelani10.github.io/playersName/'
     },
     {
         id: 6,
-        image: '',
+        image: {fylo},
         category: 'html/css',
         githubRepo: 'https://github.com/Adelani10/Sidehustle_GRP_96',
-        live: 'https://adelani10.github.io/movies'
+        live: 'https://adelani10.github.io/Sidehustle_GRP_96'
     }
 ]
 
