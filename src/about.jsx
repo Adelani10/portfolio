@@ -5,13 +5,13 @@ export default function About () {
     return (
         <section 
                 id='about' 
-                className=" h-auto text-[#45505b] flex flex-col items-center py-12 bg-stone-200 px-3 md:px-44 space-y-8">
+                className=" h-auto text-[#45505b] flex flex-col items-center py-12 bg-stone-200 px-2 md:px-44 space-y-8">
             <div className="flex flex-col items-center space-y-1">
                 <h1 className="font-bold text-4xl capitalize">about</h1>
                 <div className="underline w-[40%] border-2 h-0 border-teal-800"></div>
             </div>
-            <p className="text-center">
-                I am a creative, detail-oriented, customer/user focused, software developer with drive to continuously improve my skills. I have a proven track record of creating and implementing successful frontend web applications. Currently, I'm looking to bring my skills to a tech company with a local or global reach, targeting solid internships, as well as junior front-end roles.
+            <p className="">
+                I am a creative, detail-oriented, customer focused, software developer with drive to continuously improve my skills. I have a proven track record of creating and implementing successful frontend web applications. Currently, I'm looking to bring my skills to a tech company with a local or global reach, targeting internships, as well as junior front-end roles.
             </p>
             <article className="flex flex-col space-y-6 pt-4">
                 <section className="space-y-2">
