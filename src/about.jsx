@@ -5,7 +5,7 @@ export default function About () {
     return (
         <section 
                 id='about' 
-                className="md:h-[80vh] h-screen text-[#45505b] flex flex-col items-center py-12 bg-stone-200 px-3 md:px-44 space-y-8">
+                className="md:h-[80vh] h-auto text-[#45505b] flex flex-col items-center py-12 bg-stone-200 px-3 md:px-44 space-y-8">
             <div className="flex flex-col items-center space-y-1">
                 <h1 className="font-bold text-4xl capitalize">about</h1>
                 <div className="underline w-[40%] border-2 h-0 border-teal-800"></div>
@@ -24,15 +24,15 @@ export default function About () {
                 <article className="flex flex-col space-y-2">
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Website:  <a href="https://ab-belloadelani.netlify.app/" className="font-bold ml-2 text-teal-400 hover:text-teal-800"> ab-belloadelani.netlify.app</a></h4>
+                        <h4>Website:  <a href="https://ab-belloadelani.netlify.app/" className="font-bold text-teal-400 hover:text-teal-800"> ab-belloadelani.netlify.app</a></h4>
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Location:  <span className="font-bold capitalize ml-2"> Lagos, Nigeria.</span></h4>
+                        <h4>Location:  <span className="font-bold capitalize"> Lagos, Nigeria.</span></h4>
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Email:  <a href="mailto: harounaadelani@gmail.com" className="font-bold ml-2 text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
+                        <h4>Email:  <a href="mailto: harounaadelani@gmail.com" className="font-bold text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
                     </div>
                     {/* <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
