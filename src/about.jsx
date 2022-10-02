@@ -24,7 +24,7 @@ export default function About () {
                 <article className="flex flex-col space-y-2">
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Website:  <a href="https://ab-belloadelani.netlify.app/" className="font-bold text-teal-400 hover:text-teal-800"> ab-belloadelani.netlify.app</a></h4>
+                        <h4>Website:  <a href="https://belloadelani.netlify.app/" className="font-bold text-teal-400 hover:text-teal-800"> belloadelani.netlify.app</a></h4>
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
