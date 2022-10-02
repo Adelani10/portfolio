@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import linksData from "./data";
+// import linksData from "./data";
 
 export default function Home () {
     return (
-        <main id="home" className=" container mx-auto md:px-44 flex flex-col justify-center h-screen space-y-2 md:space-y-4 text-[#45505b]">
+        <main id="home" className=" container mx-auto home md:px-44 flex flex-col justify-center h-screen space-y-2 md:space-y-4 text-[#45505b]">
             <h1 className="font-bold md:text-6xl text-3xl  self-center md:self-start tracking-wider">Bello Adelani</h1>
             <p className="self-center md:text-2xl text-xl md:self-start text-teal-600 md:tracking-widest">
                 <ul className="dynamic-txts">
