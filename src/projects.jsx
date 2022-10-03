@@ -45,18 +45,17 @@ export default function Projects () {
 
     const prjs = projects.map((item, index) => {
             const {id, name, image, summary, tools, githubRepo, live} = item
-
-        return (
-            <Each name={name}
-                    key={id}
-                   image={image} 
-                   summary={summary}
-                   tools={tools}
-                   githubRepo={githubRepo}
-                   live={live}
-                   />
-        )
-    })
+            return (
+                <Each name={name}
+                        key={id}
+                    image={image} 
+                    summary={summary}
+                    tools={tools}
+                    githubRepo={githubRepo}
+                    live={live}
+                    />
+            )
+        })
 
     return (
         <section id="portfolio" className=" text-[#45505b] flex flex-col py-12 h-auto bg-stone-300 px-2 md:px-44 space-y-8 ">
