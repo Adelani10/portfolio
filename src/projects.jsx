@@ -13,7 +13,6 @@ const realBtns = ['all', ...btns]
 export default function Projects () {
     const [openCategory, setOpenCategory] = useState(false)
     const [projects, setProjects] = useState(projectsData)
-    const [seeMore, setSeeMore] = useState(false)
 
     function handleFilter(category) {
         const newArr = projectsData.filter(item => {
@@ -36,7 +35,7 @@ export default function Projects () {
             <button 
                 key={index} 
                 onClick={() => handleFilter(item)} 
-                className="py-2 tracking-tight md:py-2 capitalize font-bold bg-teal-400 rounded-sm  text-[12px] md:text-[15px] lg:text-[18px] hover:bg-[#45505b] text-white">
+                className="py-2 tracking-tight md:py-2 capitalize font-bold bg-teal-400 rounded-sm  text-[12px] md:text-[15px] lg:text-[18px] hover:bg-[#45505b]">
                 {item}
             </button>
         )
@@ -76,9 +75,11 @@ export default function Projects () {
                 </section>}
             </div>
 
-            <section className="lg:grid lg:grid-cols-3 lg:gap-3 space-y-6 lg:space-y-0">
+            <section className="lg:grid lg:grid-cols-3 lg:gap-3 space-y-12 lg:space-y-0">
                 {prjs}
             </section>
+
+            <p className="font-semibold pt-8 text-xl">Any questions? <a href="mailto: harounaadelani@gmail.com" className="text-sky-400 font-bold">Email Me</a></p>
 
         </section>
     )
