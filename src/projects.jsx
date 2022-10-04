@@ -75,11 +75,11 @@ export default function Projects () {
                 </section>}
             </div>
 
-            <section className="lg:grid lg:grid-cols-3 lg:gap-3 space-y-12 lg:space-y-0">
+            <section className="md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-3 lg:gap-8 space-y-12 lg:space-y-0">
                 {prjs}
             </section>
 
-            <p className="font-semibold pt-8 text-xl">Any questions? <a href="mailto: harounaadelani@gmail.com" className="text-sky-400 font-bold">Email Me</a></p>
+            <p className="font-semibold pt-8 text-xl">Any suggestions? <a href="mailto: harounadelani@gmail.com" className="text-sky-400 font-bold">Email Me</a></p>
 
         </section>
     )

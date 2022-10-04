@@ -13,13 +13,13 @@ const linksData = [
     },
     {
         id: 3,
-        text: 'portfolio',
-        icon: <i className="fa-solid fa-briefcase"></i>
+        text: 'services',
+        icon: <i className="fa-solid fa-server"></i>
     },
     {
         id: 4,
-        text: 'services',
-        icon: <i className="fa-solid fa-server"></i>
+        text: 'portfolio',
+        icon: <i className="fa-solid fa-briefcase"></i>
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const projectsData = [
         tools: 'TailwindCss & React.Js',
         githubRepo: 'https://github.com/Adelani10/country-react',
         live: 'https://ab-countries.netlify.app/',
-        summary: 'Built an App that displays information of several Countries on load, users can also learn more about wwhichever Country, from whichever region, by simply selecting the option. This App has a Dark & Light mode toggle.'
+        summary: 'Built an App that displays information of several Countries on load, users can also learn more about whichever Country, from whichever region, by simply selecting the option. This App has a Dark & Light mode toggle.'
     },
    
     {
@@ -59,7 +59,7 @@ const projectsData = [
         tools: 'Html, Css & Javascript',
         githubRepo: 'https://github.com/Adelani10/playersName',
         live: 'https://adelani10.github.io/playersName/',
-        summary: "Using Html, Css and Vanilla Javascript, I built a simple players-to-look-out-for app for fantasy football lovers. It works by simply inputting a player's name and submitting. It saves and displays the data for as much players inputed as possible. There are edit and delete functionality on each player-name saved."
+        summary: "Using Html, Css and Vanilla Javascript, I built a simple players-to-look-out-for app for fantasy football lovers. It works by simply inputting a player's name and submitting. Tranversing the localStorage, the App saves and displays the data for as much players inputed as possible. There are edit and delete functionality on each player-name saved."
     },
 
     {
@@ -81,7 +81,7 @@ const projectsData = [
         tools: 'Html, CSS & Javascript',
         githubRepo: 'https://github.com/Adelani10/movies',
         live: 'https://adelani10.github.io/movies',
-        summary: 'A two-paged App that allows you to search movie titles of your choice, as much as you want, then returns a minimum of 9 movies of similar title, in the first page. Users can save as much movies as they can to the Watchlist page (second page). They can also remove as much movies as they want from the Watchlist page.'
+        summary: 'A two-paged App that allows you to search for movies of your choice, as much as you want, then returns a minimum of 9 movies of similar title, in the first page. Users can save as much movies as they can to the Watchlist page (second page). They can also remove as much movies as they want from the Watchlist page.'
     },
     
     {
@@ -92,8 +92,48 @@ const projectsData = [
         tools: 'Html & CSS',
         githubRepo: 'https://github.com/Adelani10/Sidehustle_GRP_96',
         live: 'https://adelani10.github.io/Sidehustle_GRP_96',
-        summary: 'A simple, static landing page created with Html5 and CSS3.'
+        summary: 'A simple, static landing page created with Html5 and CSS3. Majorly built with massive regard for responsiveness.'
     }
 ]
 
-export  {linksData, projectsData}
+const skillsData = [
+    {
+        id: 1,
+        image: "/html5-original-wordmark.svg",
+        name: "html5",
+        text: "The markup language used for structuring and presenting content."
+    },
+    {
+        id: 2,
+        image: "/css3-original-wordmark.svg",
+        name: "css3",
+        text: "The standard used in the styling and formatting of web pages."
+    },
+    {
+        id: 3,
+        image: "/javascript-plain.svg",
+        name: "JavaScript",
+        text: "A text-based programming language used both on the client-side and server-side that allows you to make web pages interactive."
+    },
+    {
+        id: 4,
+        image: "/tailwind-css-seeklogo.com.svg",
+        name: "tailwindCSS",
+        text: "A utility-first CSS framework that can be composed to build any design, directly in your markup."
+    },
+    {
+        id: 5,
+        image: "/github-original.svg",
+        name: "github",
+        text: "A code hosting platform for version control and collaboration."
+    },
+    {
+        id: 6,
+        image: "/git-seeklogo.com.svg",
+        name: "git",
+        text: "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
+    },
+
+]
+
+export  {linksData, projectsData, skillsData}

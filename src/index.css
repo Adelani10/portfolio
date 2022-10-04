@@ -7,6 +7,9 @@
 #root{
   font-family: 'Source Code Pro', monospace;;
 }
+.text{
+  font-family: 'Poppins', sans-serif;
+}
 
 .dynamic-txts{
   height: 40px;

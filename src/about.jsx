@@ -32,7 +32,7 @@ export default function About () {
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Email:  <a href="mailto: harounaadelani@gmail.com" className="font-bold text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
+                        <h4>Email:  <a href="mailto: harounadelani@gmail.com" className="font-bold text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
                     </div>
                     {/* <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>

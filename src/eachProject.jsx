@@ -7,7 +7,7 @@ export default function Each ({id, live, image, name, summary, tools, githubRepo
 
 
     return (
-        <div key={id} className=" h-auto shadow-md shadow-neutral-500 rounded-sm">
+        <div key={id} className=" h-auto bg-stone-100 hover:shadow-lg shadow-black rounded-sm">
                 <a href={live} target='_blank' className="mx-auto flex flex-col items-center hover:shadow-lg shadow-black">
                     <img src={image} alt="image" className="w-full h-72 rounded-t-sm" />
                     <section className="font-bold flex items-center space-x-2 text-sky-400 py-2">
@@ -18,11 +18,11 @@ export default function Each ({id, live, image, name, summary, tools, githubRepo
                 </a>
 
                 <div className="py-3 px-3 space-y-4 ">
-                    <h1 className="font-bold md:text-2xl text-xl">
+                    <h1 className="font-bold md:text-2xl text-xl capitalize">
                         {name}
                     </h1>
                     <p className="inline-block ">
-                        {seeMore ? summary : `${summary.substring(0, 60)}`} <button onClick={()=> setSeeMore(!seeMore)} 
+                        {seeMore ? summary : `${summary.substring(0, 65)}...`} <button onClick={()=> setSeeMore(!seeMore)} 
                         className=" text-sky-400">{seeMore ? 'see less' : 'see more'}</button>
                     </p>
                     <h3 className="font-bold text-black">TOOLS - {tools}</h3>
