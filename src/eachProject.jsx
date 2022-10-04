@@ -21,7 +21,7 @@ export default function Each ({id, live, image, name, summary, tools, githubRepo
                     <h1 className="font-bold md:text-2xl text-xl capitalize">
                         {name}
                     </h1>
-                    <p className="inline-block ">
+                    <p className="inline-block font-pop">
                         {seeMore ? summary : `${summary.substring(0, 65)}...`} <button onClick={()=> setSeeMore(!seeMore)} 
                         className=" text-sky-400">{seeMore ? 'see less' : 'see more'}</button>
                     </p>

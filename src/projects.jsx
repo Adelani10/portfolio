@@ -35,7 +35,7 @@ export default function Projects () {
             <button 
                 key={index} 
                 onClick={() => handleFilter(item)} 
-                className="py-2 tracking-tight md:py-2 capitalize font-bold bg-teal-400 rounded-sm  text-[12px] md:text-[15px] lg:text-[18px] hover:bg-[#45505b]">
+                className="py-2 tracking-tight md:py-2 capitalize font-bold bg-teal-400 rounded-sm text-[12px] md:text-[15px] lg:text-[18px] hover:bg-[#45505b] hover:text-teal-400">
                 {item}
             </button>
         )

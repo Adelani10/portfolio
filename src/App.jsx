@@ -4,6 +4,7 @@ import Home from './home'
 import About from './about'
 import Projects from './projects'
 import Skills from './skills'
+import Footer from './footer'
 
 function App() {
   const [openNav, setOpenNav] = useState(false)
@@ -22,6 +23,7 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
+      <Footer/>
     </div>
   )
 }
