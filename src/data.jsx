@@ -76,7 +76,7 @@ const projectsData = [
     {
         id: 5,
         name: 'movie-watchlist',
-        image: '/movie.jpg',
+        image: '/movies.jpg',
         category: 'javascript',
         tools: 'Html, CSS & Javascript',
         githubRepo: 'https://github.com/Adelani10/movies',
