@@ -17,7 +17,7 @@ export default function Each ({id, live, image, name, summary, tools, githubRepo
                     
                 </a>
 
-                <div className="py-3 px-3 space-y-4 ">
+                <div className="py-3 px-3 space-y-2 ">
                     <h1 className="font-bold md:text-2xl text-xl capitalize">
                         {name}
                     </h1>
