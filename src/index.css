@@ -7,13 +7,15 @@
 #root{
   font-family: 'Source Code Pro', monospace;;
 }
-.come{
-  transform: translateY();
-}
+
 .dynamic-txts{
   height: 40px;
   line-height: 40px;
   overflow: hidden;
+}
+
+.tr{
+  transform: translateY();
 }
 
 

@@ -38,8 +38,8 @@ export default function Contact () {
 
                     <div className=" xl:flex xl:space-y-0 space-y-8">
                         <article className="flex flex-col space-y-4 xl:w-[30%] w-full">
-                            <div className="flex items-center space-x-4">
-                                <a href="tel: +2349090162500" className=" inline-block h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
+                            <div className="flex items-center space-x-3 md:space-x-4">
+                                <a href="tel: +2349090162500" className="h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
                                     <i className="fa-solid fa-phone"></i>
                                 </a>
                                 <div>
@@ -48,8 +48,8 @@ export default function Contact () {
                                 </div>
                             </div>
 
-                            <div className="flex items-center space-x-4">
-                                <a href="mailto: harounadelani@gmail.com" className=" inline-block h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
+                            <div className="flex items-center space-x-3 md:space-x-4">
+                                <a href="mailto: harounadelani@gmail.com" className="h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
                                     <i className="fa-solid fa-envelope"></i>
                                 </a>
                                 <div>

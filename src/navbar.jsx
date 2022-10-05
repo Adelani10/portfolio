@@ -18,16 +18,20 @@ export default function Navbar ({openNav, remove}) {
                                         remove={remove}
                             />
                         })
-
+    const styles = {
+        transform: openNav ? 'translateX(0)' : 'translateX(-100%)'
+    }
 
     return (
-        <div 
-            className=
-            {`${openNav ? 'h-screen top-0 left-0 translate-y-0 justify-center translate-x-[0] ease-in bg-stone-400 w-[75%] px-3 z-50' 
-                : 'top-1/2 left-2 translate-y-[-50%] translate-x-[-100%] md:translate-x-0 ease-out'} 
-            transition-all  duration-500 fixed space-y-3 flex flex-col text-[#f5f5f5]`}
-            >
-            {displayLinks}
-        </div>
+        <>
+            <div className='fixed space-y-3 hidden md:flex flex-col text-[#f5f5f5] top-1/2 left-2 translate-y-[-50%]'>
+                {displayLinks}
+            </div>
+            
+            <div style={styles} className="h-screen -translate-x-full top-0 left-0 md:hidden flex flex-col fixed space-y-3 justify-center bg-[#45505b] w-[80%] px-3 z-50 transition-all ease-in-out duration-500">
+                {displayLinks}
+            </div>
+        </>
+        
     )
 }
