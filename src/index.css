@@ -7,10 +7,9 @@
 #root{
   font-family: 'Source Code Pro', monospace;;
 }
-.text{
-  font-family: 'Poppins', sans-serif;
+.come{
+  transform: translateY();
 }
-
 .dynamic-txts{
   height: 40px;
   line-height: 40px;

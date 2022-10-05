@@ -10,6 +10,10 @@ import Contact from './contact'
 function App() {
   const [openNav, setOpenNav] = useState(false)
 
+  function remove() {
+    setOpenNav(false)
+  }
+
   return (
     <div className="App bg-stone-100  flex flex-col">
       <div className="font-bold text-4xl fixed top-2 right-5 md:hidden">
@@ -19,7 +23,7 @@ function App() {
           </button>
       </div>
       
-      <Navbar openNav={openNav}/>
+      <Navbar openNav={openNav} remove={remove}/>
       <Home/>
       <About/>
       <Skills/>

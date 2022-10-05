@@ -39,7 +39,7 @@ export default function Contact () {
                     <div className=" xl:flex xl:space-y-0 space-y-8">
                         <article className="flex flex-col space-y-4 xl:w-[30%] w-full">
                             <div className="flex items-center space-x-4">
-                                <a href="https://twitter.com/laniplaydirty" className=" inline-block h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
+                                <a href="tel: +2349090162500" className=" inline-block h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
                                     <i className="fa-solid fa-phone"></i>
                                 </a>
                                 <div>
@@ -49,7 +49,7 @@ export default function Contact () {
                             </div>
 
                             <div className="flex items-center space-x-4">
-                                <a href="https://twitter.com/laniplaydirty" className=" inline-block h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
+                                <a href="mailto: harounadelani@gmail.com" className=" inline-block h-8 w-8 bg-stone-400 flex justify-center items-center rounded-full hover:text-teal-400">
                                     <i className="fa-solid fa-envelope"></i>
                                 </a>
                                 <div>
@@ -65,14 +65,14 @@ export default function Contact () {
                                         name="name" 
                                         placeholder="Your Name"
                                         onChange={handleChange}
-                                        className=" border-2 w-full px-3 border-stone-400 h-10 rounded-md"
+                                        className=" border md:border-2 w-full px-3 border-stone-400 h-10 rounded-md"
                                  />
 
                                 <input type="email" 
                                         name="email" 
                                         placeholder="Your Email"
                                         onChange={handleChange}
-                                        className=" border-2 w-full px-3 border-stone-400 h-10 rounded-md"
+                                        className=" border md:border-2 w-full px-3 border-stone-400 h-10 rounded-md"
                                  />
                             </div>
 
@@ -80,14 +80,14 @@ export default function Contact () {
                                         name="subject" 
                                         placeholder="Subject"
                                         onChange={handleChange}
-                                        className=" border-2 w-full px-3 border-stone-400 h-10 rounded-md"
+                                        className=" border md:border-2 w-full px-3 border-stone-400 h-10 rounded-md"
                             />
 
                             <textarea name="comment" 
                                       rows="7" 
                                       placeholder="Share your thoughts..."
                                       onChange={handleChange}
-                                      className="w-full px-3 border-2 border-stone-400 rounded-md"
+                                      className="w-full px-3 border md:border-2 border-stone-400 rounded-md"
                             />
                             <div className="flex items-center space-x-2 md:text-lg">
                                 <input type="checkbox" 

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer () {
     return (
-        <section className=" h-auto text-[#45505b] flex flex-col items-center py-6 bg-stone-300 px-2 md:px-44 space-y-8">
+        <footer className=" h-auto text-[#45505b] flex flex-col items-center py-6 bg-stone-300 px-2 md:px-44 space-y-8">
             <div className="space-y-4">
                 <h1 className="font-bold text-3xl md:text-5xl text-center text-teal-800">Adelani Bello</h1>
                 <p className="font-pop text-center">
@@ -24,7 +24,7 @@ export default function Footer () {
 
             <p className="md:text-lg text-center"><span className="font-bold">&copy; </span>Copyright <span className="font-bold text-black">Bello Adelani</span>. All Rights Reserved.</p>
             
-        </section>
+        </footer>
     )
 }
 

@@ -1,38 +1,28 @@
 import React from "react";
 import { useState } from "react";
 import {linksData} from "./data";
+import Nav from "./eachNav";
 // import { useRef } from "react";
 
 
 
-export default function Navbar () {
-    const [displayLinkName, setDisplayLinkName] = useState(false)
+export default function Navbar ({openNav, remove}) {
+
+    const displayLinks = linksData.map((item, index) => {
+                            const {id, text, icon} = item
+                            return <Nav id={id}
+                                        key={index}
+                                        text={text}
+                                        icon={icon}
+                                        openNav={openNav}
+                                        remove={remove}
+                            />
+                        })
 
 
     return (
-        <div className="fixed top-1/2 left-2 translate-y-[-50%] space-y-3 md:flex hidden flex-col text-[#f5f5f5]">
-            {linksData.map((item, index) => {
-                const {id, text, icon} = item
-                return (
-                    <a 
-                        key={index}
-                        href={`#${text}`} 
-                        id={id}
-                        onMouseEnter={(event)=> {
-                            if (id == event.target.id){
-                                setDisplayLinkName(true)
-                            }else {
-                                console.log(id)
-                                console.log(event.target.id)
-                            }
-                        }}
-                        onMouseLeave={()=> setDisplayLinkName(false)}
-                        className={`flex items-center px-3 capitalize h-12 rounded-full transition-all ease-in-out duration-700 ${displayLinkName ? 'bg-teal-800 space-x-2 w-auto' : 'bg-white text-teal-800 w-12 justify-center'}`}>
-                        {icon}
-                        {displayLinkName && <p className=''>{text}</p>}
-                    </a>
-                )
-            })}
+        <div className={`${openNav ? 'h-screen top-0 left-0 translate-y-0 justify-center translate-x-[0] bg-stone-400 w-[60%] px-3 z-50' : 'top-1/2 left-2 translate-y-[-50%] translate-x-[-100%] overflow-hidden md:translate-x-0'} transition-all ease-in-out duration-500 fixed space-y-3 flex flex-col text-[#f5f5f5]`}>
+            {displayLinks}
         </div>
     )
 }

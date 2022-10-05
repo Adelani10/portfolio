@@ -136,4 +136,15 @@ const skillsData = [
 
 ]
 
+//  else if (openNav === true){
+//            return (<a 
+//                 key={id}
+//                 href={`#${text}`} 
+//                 id={id}
+//                 className={`bg-white w-full flex items-center px-7 text-teal-800 capitalize h-12 rounded-full transition-all ease-in-out duration-500 hover:text-white hover:bg-teal-800 space-x-4`}>
+//                     {icon}
+//                 <p className='tracking-widest'>{text}</p>
+//             </a>)
+//         }
+
 export  {linksData, projectsData, skillsData}
