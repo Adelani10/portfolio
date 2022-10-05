@@ -24,7 +24,7 @@ export default function Skills () {
                             <div className="underline w-[40%] border-2 h-0 border-teal-800"></div>
                     </div>
 
-                    <h2 className="text-teal-800 font-semibold">As a frontend developer, the following are the tools I possess to create client-side software.</h2>
+                    <h2 className="text-teal-800 font-semibold text-center">As a frontend developer, the following are the tools I possess to develop client-side software.</h2>
                     <section className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 space-y-6 md:space-y-0">
                             {skills}                        
                     </section>

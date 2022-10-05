@@ -57,7 +57,7 @@ export default function Projects () {
         })
 
     return (
-        <section id="portfolio" className=" text-[#45505b] flex flex-col py-12 h-auto bg-stone-300 px-4 md:px-44 space-y-8 ">
+        <section id="portfolio" className=" text-[#45505b] flex flex-col py-12 h-auto bg-zinc-200 px-4 md:px-44 space-y-8 ">
 
             <div className="flex flex-col self-center items-center space-y-1">
                 <h1 className="font-bold text-4xl capitalize">projects</h1>
