@@ -21,7 +21,12 @@ export default function Navbar ({openNav, remove}) {
 
 
     return (
-        <div className={`${openNav ? 'h-screen top-0 left-0 translate-y-0 justify-center translate-x-[0] bg-stone-400 w-[60%] px-3 z-50' : 'top-1/2 left-2 translate-y-[-50%] translate-x-[-100%] overflow-hidden md:translate-x-0'} transition-all ease-in-out duration-500 fixed space-y-3 flex flex-col text-[#f5f5f5]`}>
+        <div 
+            className=
+            {`${openNav ? 'h-screen top-0 left-0 translate-y-0 justify-center translate-x-[0] ease-in bg-stone-400 w-[60%] px-3 z-50' 
+                : 'top-1/2 left-2 translate-y-[-50%] translate-x-[-100%] md:translate-x-0 ease-out'} 
+            transition-all  duration-500 fixed space-y-3 flex flex-col text-[#f5f5f5]`}
+            >
             {displayLinks}
         </div>
     )
