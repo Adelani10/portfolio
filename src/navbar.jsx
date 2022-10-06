@@ -33,7 +33,7 @@ export default function Navbar ({openNav, remove}) {
                     {displayLinks}
                 </div>
                 <a 
-                    href="./cv.bello.pdf" 
+                    href="cv.bello.pdf" 
                     onClick={remove}
                     download 
                     className="text-2xl inline-block self-center text-white py-2 px-3 tracking-widest rounded-sm hover:bg-[#f5f5f5] hover:text-[#45505b]">

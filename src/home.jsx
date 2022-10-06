@@ -7,7 +7,7 @@ export default function Home () {
             <div className="md:text-2xl text-xl text-teal-600 md:tracking-widest">
                 <ul className="dynamic-txts">
                     <li><span>Software Developer</span></li>
-                    <li><span>FrontEnd Engineer</span></li>
+                    <li><span>Frontend Engineer</span></li>
                     <li><span>Tech Enthusiast</span></li>
                 </ul> 
             </div>
