@@ -28,7 +28,7 @@ export default function Navbar ({openNav, remove}) {
                 {displayLinks}
             </div>
             
-            <div style={styles} className="h-screen -translate-x-full top-0 left-0 md:hidden fixed flex flex-col justify-around bg-[#45505b] w-[80%] px-3 z-50 transition-all ease-in-out duration-500">
+            <div style={styles} className="h-screen -translate-x-full top-0 left-0 md:hidden fixed flex flex-col justify-evenly bg-[#45505b] w-[80%] px-3 z-50 transition-all ease-in-out duration-500">
                 <div className="flex flex-col justify-center space-y-3 place-items-center">
                     {displayLinks}
                 </div>
