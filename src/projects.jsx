@@ -68,7 +68,7 @@ export default function Projects () {
                 <button 
                     onClick={() => setOpenCategory(!openCategory)} 
                     className="p-3 text-white rounded-sm bg-teal-800 hover:bg-teal-400 hover:text-[#45505b] font-bold">
-                        Filter By Category
+                        <p>Filter By Category <span>{openCategory ? <i className="fa-solid fa-angle-up"></i> :<i className="fa-solid fa-angle-down"></i>}</span></p>
                 </button>
                 {openCategory && <section className="grid grid-cols-4 gap-2 md:gap-6">
                     {buttons}
