@@ -23,7 +23,7 @@ export default function About () {
                 <article className="flex flex-col space-y-3">
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Resume:  <a href="cv.bello.pdf" download className="font-bold text-white bg-teal-800 border-emerald-700 py-2 px-3 md:tracking-widest hover:bg-teal-400 rounded-sm">Get <i className="fa-solid fa-download"></i></a></h4>
+                        <h4>Resume:  <a href="bello.pdf" target="_blank" download className="font-bold text-white bg-teal-800 border-emerald-700 py-2 px-3 md:tracking-widest hover:bg-teal-400 rounded-sm">Get <i className="fa-solid fa-download"></i></a></h4>
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
