@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
+import { useEffect } from 'react'
 import Navbar from './navbar'
 import Home from './home'
 import About from './about'
@@ -10,15 +11,22 @@ import { Link } from "react-scroll"
 
 function App() {
   const [openNav, setOpenNav] = useState(false)
-  // const [backToTop, setBackToTop] = useState(false)
+  const [isShown, setIsShown] = useState(false)
 
-  // useEffect(()=>{
-  //   window.addEventListener(scroll, () => {
-  //     setBackToTop(!backToTop)
-  //     const scrollHeight = window.pageYOffset
-  //     console.log(scrollHeight)
-  //   })
-  // }, [backToTop])
+  useEffect(()=>{
+    function handleScroll () {
+      const scrollHeight = window.pageYOffset
+      if (scrollHeight >= 3700){
+        setIsShown(true)
+      }
+      else{
+        setIsShown(false)
+      }
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener(scroll, handleScroll)
+  }, [])
+
 
   function remove() {
     setOpenNav(false)
@@ -33,11 +41,11 @@ function App() {
           </button>
       </div>
 
-      {/* <Link 
+      {isShown && <Link 
           to="home" spy={true} smooth={true} offset={50} duration={500} 
-          className="scroll-link top-link p-3 bg-teal-400 fixed h-10 w-10 flex items-center justify-center rounded-full text-[#f5f5f5] bottom-12 right-5">
+          className="p-3 bg-teal-800 fixed h-10 w-10 flex items-center justify-center rounded-full text-[#f5f5f5] bottom-16 right-5">
         <i className="fas fa-arrow-up"></i>
-      </Link> */}
+      </Link>}
       
       <Navbar openNav={openNav} remove={remove}/>
       <Home/>
