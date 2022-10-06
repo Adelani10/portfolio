@@ -28,8 +28,18 @@ export default function Navbar ({openNav, remove}) {
                 {displayLinks}
             </div>
             
-            <div style={styles} className="h-screen -translate-x-full top-0 left-0 md:hidden flex flex-col fixed space-y-3 justify-center bg-[#45505b] w-[80%] px-3 z-50 transition-all ease-in-out duration-500">
-                {displayLinks}
+            <div style={styles} className="h-screen -translate-x-full top-0 left-0 md:hidden fixed flex flex-col justify-around bg-[#45505b] w-[80%] px-3 z-50 transition-all ease-in-out duration-500">
+                <div className="flex flex-col justify-center space-y-3 place-items-center">
+                    {displayLinks}
+                </div>
+                <a 
+                    href="./cv.bello.pdf" 
+                    onClick={remove}
+                    download 
+                    className="text-2xl inline-block self-center text-white py-2 px-3 tracking-widest rounded-sm hover:bg-[#f5f5f5] hover:text-[#45505b]">
+                <i className="fa-solid fa-download"></i> Resume
+                </a>
+
             </div>
         </>
         

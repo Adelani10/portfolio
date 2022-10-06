@@ -20,10 +20,14 @@ export default function About () {
                     </p>
                 </section>
                 
-                <article className="flex flex-col space-y-2">
+                <article className="flex flex-col space-y-3">
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Website:  <a href="https://belloadelani.netlify.app/" className="font-bold text-teal-400 hover:text-teal-800"> belloadelani.netlify.app</a></h4>
+                        <h4>Resume:  <a href="./cv.bello.pdf" download className="font-bold text-white bg-teal-800 border-emerald-700 py-2 px-3 md:tracking-widest hover:bg-teal-400 rounded-sm">Get <i className="fa-solid fa-download"></i></a></h4>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                        <i className="fa-solid fa-angles-right text-teal-800"></i>
+                        <h4>Website:  <a href="https://belloadelani.netlify.app" className="font-bold text-teal-400 hover:text-teal-800"> belloadelani.netlify.app</a></h4>
                     </div>
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
@@ -33,16 +37,13 @@ export default function About () {
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
                         <h4>Email:  <a href="mailto: harounadelani@gmail.com" className="font-bold text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
                     </div>
-                    {/* <div className="flex items-center space-x-2">
-                        <i className="fa-solid fa-angles-right text-teal-800"></i>
-                        <h4>Tel:  <a href="mailto: harounaadelani@gmail.com" className="font-bold ml-2 text-teal-400 hover:text-teal-800">harounadelani@gmail.com</a></h4>
-                    </div> */}
                     <div className="flex items-center space-x-2">
                         <i className="fa-solid fa-angles-right text-teal-800"></i>
                         <h4>Freelance:  <span className="font-bold capitalize ml-2">available</span></h4>
                     </div>
                 </article>
             </article>
+            
             
         </section>
 

@@ -13,11 +13,11 @@ function App() {
   const [backToTop, setBackToTop] = useState(false)
 
   // useEffect(()=>{
-    window.addEventListener(scroll, () => {
-      setBackToTop(!backToTop)
-      const scrollHeight = window.pageYOffset
-      console.log(scrollHeight)
-    })
+  //   window.addEventListener(scroll, () => {
+  //     setBackToTop(!backToTop)
+  //     const scrollHeight = window.pageYOffset
+  //     console.log(scrollHeight)
+  //   })
   // }, [backToTop])
 
   function remove() {
@@ -35,7 +35,7 @@ function App() {
 
       <Link 
           to="home" spy={true} smooth={true} offset={50} duration={500} 
-          className="scroll-link top-link p-3 bg-teal-400 fixed h-10 w-10 flex items-center justify-center rounded-full text-[#f5f5f5] bottom-2 right-5">
+          className="scroll-link top-link p-3 bg-teal-400 fixed h-10 w-10 flex items-center justify-center rounded-full text-[#f5f5f5] bottom-12 right-5">
         <i className="fas fa-arrow-up"></i>
       </Link>
       
