@@ -22,21 +22,8 @@ export default function Footer () {
                 </a>
             </div>
 
-            <p className="md:text-lg text-center"><span className="font-bold">&copy; </span>Copyright <span className="font-bold text-black">Bello Adelani</span>. All Rights Reserved.</p>
+            <p className="md:text-lg text-center"> 2022 &copy; <span className="font-bold text-black">Bello Adelani</span>. All Rights Reserved.</p>
             
         </footer>
     )
 }
-
-// achieve
-// paddle
-// approve
-// zoo
-// Piano 
-// unfold 
-// mutual
-// special 
-// web 
-// offer 
-// fresh 
-// solution

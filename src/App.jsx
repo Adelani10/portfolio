@@ -19,7 +19,7 @@ function App() {
   useEffect(()=>{
     function handleScroll () {
       const scrollHeight = window.pageYOffset
-      if (scrollHeight >= 2500){
+      if (scrollHeight >= 1500){
         setIsShown(true)
       }
       else{
