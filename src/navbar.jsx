@@ -2,11 +2,15 @@ import React from "react";
 import { useState } from "react";
 import {linksData} from "./data";
 import Nav from "./eachNav";
+import { useContext } from 'react'
+import { Utility } from './ToggleContext'
 // import { useRef } from "react";
 
 
 
-export default function Navbar ({openNav, remove}) {
+export default function Navbar () {
+
+    const {openNav, remove} = useContext(Utility)
 
     const displayLinks = linksData.map((item, index) => {
                             const {id, text, icon} = item

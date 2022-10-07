@@ -1,5 +1,7 @@
 import { useState} from 'react'
 import { useEffect } from 'react'
+import { useContext } from 'react'
+import { Utility } from './ToggleContext'
 import Navbar from './navbar'
 import Home from './home'
 import About from './about'
@@ -10,13 +12,14 @@ import Contact from './contact'
 import { Link } from "react-scroll"
 
 function App() {
-  const [openNav, setOpenNav] = useState(false)
   const [isShown, setIsShown] = useState(false)
+
+  const {openNav, handleClick, remove} = useContext(Utility)
 
   useEffect(()=>{
     function handleScroll () {
       const scrollHeight = window.pageYOffset
-      if (scrollHeight >= 3700){
+      if (scrollHeight >= 2500){
         setIsShown(true)
       }
       else{
@@ -28,15 +31,11 @@ function App() {
   }, [])
 
 
-  function remove() {
-    setOpenNav(false)
-  }
-
   return (
     <div className="App bg-stone-100  flex flex-col">
       <div className="font-bold text-4xl fixed top-2 right-5 md:hidden">
          <button 
-            onClick={() => setOpenNav(!openNav)} 
+            onClick={handleClick} 
             className={`${openNav? 'text-red-600' : 'text-teal-800'}`}>{openNav ?  <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}
           </button>
       </div>
@@ -47,7 +46,7 @@ function App() {
         <i className="fas fa-arrow-up"></i>
       </Link>}
       
-      <Navbar openNav={openNav} remove={remove}/>
+      <Navbar/>
       <Home/>
       <About/>
       <Skills/>
