@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser'
 
 export default function Contact () {
     const [formData, setFormData] = useState({
@@ -10,8 +10,9 @@ export default function Contact () {
         subject: "",
         comment: "",
         connect: false
-    })  
-    
+    }) 
+    const form = useRef();
+
     function handleChange (event) {
         const {type, value, name, checked } = event.target
         setFormData(prev => {
@@ -24,7 +25,13 @@ export default function Contact () {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(formData)
+     emailjs.sendForm('service_1axc72l', 'template_h66a8wg', form.current, 'jZE_VncTTl7KurqPF')
+      .then((result) => {
+          console.log(result.text)
+      }, (error) => {
+          console.log(error.text);
+      });
+      event.target.reset()
     }
 
     return (
@@ -59,7 +66,7 @@ export default function Contact () {
                             </div>
                         </article>
 
-                        <form onSubmit={handleSubmit} className="xl:w-[70%] space-y-2 flex flex-col">
+                        <form onSubmit={handleSubmit} ref={form} className="xl:w-[70%] space-y-2 flex flex-col">
                             <div className="md:grid md:grid-cols-2 md:gap-4 space-y-2 md:space-y-0">
                                 <input type="text" 
                                         name="name" 
