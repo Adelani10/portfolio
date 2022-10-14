@@ -90,9 +90,9 @@ const projectsData = [
         image: '/fylo.jpg',
         category: 'html/css',
         tools: 'Html & CSS',
-        githubRepo: 'https://github.com/Adelani10/Sidehustle_GRP_96',
-        live: 'https://adelani10.github.io/Sidehustle_GRP_96',
-        summary: 'A simple, static landing page created with Html5 and CSS3. Majorly built with massive regard for responsiveness.'
+        githubRepo: 'https://github.com/Adelani10/Fylo',
+        live: 'https://adelani10.github.io/Fylo/',
+        summary: 'A simple, static landing page created with Html5 and CSS3. Majorly built with regard for responsiveness.'
     }
 ]
 
