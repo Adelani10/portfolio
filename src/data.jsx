@@ -32,7 +32,7 @@ const projectsData = [
     {
         id: 1,
         name: 'quizzical',
-        image: '/quiz.jpg',
+        image: 'https://res.cloudinary.com/dksvvhuj2/image/upload/v1674896627/portfolio/thumbnails/quiz_bj9pun.jpg',
         category: 'react',
         tools: 'React.Js & TailwindCss',
         githubRepo: 'https://github.com/Adelani10/quizGame',
@@ -43,7 +43,7 @@ const projectsData = [
     {
         id: 2,
         name: 'Countries Info',
-        image: '/countries.jpg',
+        image: 'https://res.cloudinary.com/dksvvhuj2/image/upload/v1674896688/portfolio/thumbnails/countries_twknij.jpg',
         category: 'react',
         tools: 'TailwindCss & React.Js',
         githubRepo: 'https://github.com/Adelani10/country-react',
@@ -54,7 +54,7 @@ const projectsData = [
     {
         id: 3,
         name: 'Save Players',
-        image: '/fpl.jpg',
+        image: 'https://res.cloudinary.com/dksvvhuj2/image/upload/v1674896695/portfolio/thumbnails/fpl_bdullf.jpg',
         category: 'javascript',
         tools: 'Html, Css & Javascript',
         githubRepo: 'https://github.com/Adelani10/playersName',
@@ -65,7 +65,7 @@ const projectsData = [
     {
         id: 4,
         name: 'tenzies',
-        image: '/tenzies.jpg',
+        image: 'https://res.cloudinary.com/dksvvhuj2/image/upload/v1674896662/portfolio/thumbnails/tenzies_g26pze.jpg',
         category: 'react',
         tools: 'React.Js & TailwindCss',
         githubRepo: 'https://github.com/Adelani10/tenzies',
@@ -76,7 +76,7 @@ const projectsData = [
     {
         id: 5,
         name: 'movie-watchlist',
-        image: '/movies.jpg',
+        image: 'https://res.cloudinary.com/dksvvhuj2/image/upload/v1674896636/portfolio/thumbnails/movies_vws981.jpg',
         category: 'javascript',
         tools: 'Html, CSS & Javascript',
         githubRepo: 'https://github.com/Adelani10/movies',
@@ -87,49 +87,66 @@ const projectsData = [
     {
         id: 6,
         name: 'Fylo Landing Page',
-        image: '/fylo.jpg',
+        image: 'https://res.cloudinary.com/dksvvhuj2/image/upload/v1674896740/portfolio/thumbnails/fylo_t9nqqf.jpg',
         category: 'html/css',
         tools: 'Html & CSS',
         githubRepo: 'https://github.com/Adelani10/Fylo',
         live: 'https://adelani10.github.io/Fylo/',
         summary: 'A simple, static landing page created with Html5 and CSS3. Majorly built with regard for responsiveness.'
-    }
+    },
+
+    {
+        id: 7,
+        name: 'Musica',
+        image: 'https://res.cloudinary.com/dksvvhuj2/image/upload/v1674896849/portfolio/thumbnails/musica_thumbnail_z9zlge.png',
+        category: 'react',
+        tools: 'React.Js & TailwindCss',
+        githubRepo: 'https://github.com/Adelani10/musica',
+        live: 'https://ab-musica.netlify.app',
+        summary: 'A full music react app with numerous pages and functionalities'
+    },
 ]
 
 const skillsData = [
     {
         id: 1,
-        image: "/html5-original-wordmark.svg",
+        image: "https://res.cloudinary.com/dksvvhuj2/image/upload/v1674897203/portfolio/tools/html5-original-wordmark_kvqjnl.svg",
         name: "html5",
         text: "The markup language used for structuring and presenting content."
     },
     {
         id: 2,
-        image: "/css3-original-wordmark.svg",
+        image: "https://res.cloudinary.com/dksvvhuj2/image/upload/v1674897203/portfolio/tools/css3-original-wordmark_uedlrk.svg",
         name: "css3",
         text: "The standard used in the styling and formatting of web pages."
     },
     {
         id: 3,
-        image: "/javascript-plain.svg",
+        image: "https://res.cloudinary.com/dksvvhuj2/image/upload/v1674897203/portfolio/tools/javascript-plain_ae3hnj.svg",
         name: "JavaScript",
         text: "A text-based programming language used both on the client-side and server-side that allows you to make web pages interactive."
     },
     {
         id: 4,
-        image: "/tailwind-css-seeklogo.com.svg",
+        image: "https://res.cloudinary.com/dksvvhuj2/image/upload/v1674897203/portfolio/tools/tailwind-css-seeklogo.com_lmubj8.svg",
         name: "tailwindCSS",
         text: "A utility-first CSS framework that can be composed to build any design, directly in your markup."
     },
     {
         id: 5,
-        image: "/github-original.svg",
+        image: "https://res.cloudinary.com/dksvvhuj2/image/upload/v1674897203/portfolio/tools/react-original-wordmark_rjverm.svg",
+        name: "react",
+        text: "An open-source front-end javascript library for building user interfaces based on UI components."
+    },
+    {
+        id: 6,
+        image: "https://res.cloudinary.com/dksvvhuj2/image/upload/v1674897204/portfolio/tools/github-original_eudeaz.svg",
         name: "github",
         text: "A code hosting platform for version control and collaboration."
     },
     {
-        id: 6,
-        image: "/git-seeklogo.com.svg",
+        id: 7,
+        image: "https://res.cloudinary.com/dksvvhuj2/image/upload/v1674897203/portfolio/tools/git-seeklogo.com_d3ykaw.svg",
         name: "git",
         text: "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
     },
